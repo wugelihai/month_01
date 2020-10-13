@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 1000px;
+            height: 1000px;
+            background: yellow;
+            /* 设置以图片作为背景，no-repeat不重复显示当前图片，拉伸当前图片 */
+            /* background: url(imgs/logo.png) no-repeat; */
+            /* border: 1px solid black; */
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background: burlywood;
+
+            /* 设置四边边框 */
+            border-top: 5px solid black;
+            border-left: 5px solid green;
+            border-right: 5px solid rebeccapurple;
+            border-bottom: 5px solid red;
+
+            /* 设置内边距， 内容到边框的距离，如果设置四边是上右下左 */
+            padding-top: 10px solid red;
+            padding-left: 10px solid green;
+
+            /* 设置外边距，设置元素到外边框的距离,四边框都是可以设置的 */
+            margin: 1px ;
+            /* div可以在一行设置浮动显示，左浮动，右浮动 */
+            float: right;
+        }
+
+        .box3{
+            width: 100px;
+            height: 100px;
+            background: seagreen;
+            float: right;
+        }
+
+        .box4{
+            width: 100px;
+            height: 100px;
+            background: lightblue;
+            /* 左浮动，右浮动，可以让它们在一行显示 */
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+</body>
+</html>

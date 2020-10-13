@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function fnShow(){
+        //     var sTr = document.getElementById('p1');
+        //     alert(sTr);
+        // }
+        // 页面加载完成之后会执行的
+        // window.onload = fnShow;
+        // 上面的定义的函数只在这里被使用了一次，也不会希望其他函数使用，所以可以定义为匿名函数
+        
+        // 根据id去获取段落标签
+        window.onload = function(){
+            var sTr = document.getElementById('p1');
+            alert(sTr);
+        }
+    </script>
+</head>
+<body>
+    <!-- 标签如果想获取，必须要等到页面加载完成 -->
+    <p id="p1">这是一个段落标签</p>
+</body>
+</html>
+<!-- 第一种方法，将script放到最下面，当然这种方法不推荐，知道即可 -->
+<!-- <script>
+    var sTr = document.getElementById('p1')
+    alert(sTr)
+</script> -->

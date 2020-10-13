@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var aList = [1,2,3,4,5,6,7,8,9];
+        // alert(aList.length);
+        // alert(aList[1]);
+        // push增加
+        // aList.push(5);
+        // alert(aList);
+        // pop删除，删除最后一位，不能指定删除
+        // aList.pop();
+        // alert(aList);
+        // aList.splice(2)
+        // aList.splice(start,num,element1)
+        // start：必需,开始删除元素的位置，这个位置的元素就开始删除了
+        // num：可选，删除元素的个数
+        // element：可选，可在start这个位置开始插入新的元素，不限制插入元素个数
+        alert(aList)
+
+        // aList.splice(3,2)
+        alert(aList)
+
+        // 第二个位置是0的，效果就是替换，这里的效果就是将下标为2的元素替换成red
+        // aList.splice(2,0,'red')
+
+        aList.splice(3,2,'red','yellow','black')
+        alert(aList)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

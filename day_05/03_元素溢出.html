@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: green;
+            /* 设置超出部分不显示 */
+            /* overflow: hidden; */
+            /* 超出部分显示,默认的就是显示，可以不用写 */
+            overflow: visible;
+            /* 超出部分滑动显示 */
+            overflow: auto;
+        }
+
+        .box2{
+            width: 200px;
+            height: 50px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">xxxxxxxxxxx</div>
+    </div>
+</body>
+</html>

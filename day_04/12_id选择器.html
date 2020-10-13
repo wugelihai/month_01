@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试</title>
+    <style>
+        /* id选择器，以#开头，根据id名选择html中的标签，给标签添加样式 */
+        /* 不经常使用 */
+        #myid1{
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <p id="myid1">哈哈</p>
+    <!-- 错误的写法，一个html文件中标签id是唯一的，不能重复，后续的js会根据id获取标签的对象 -->
+    <p id="myid1">嘻嘻</p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试</title>
+    <style>
+        div div{
+            color: red;
+        }
+
+        .myq{
+            color: chartreuse;
+        }
+
+        div p{
+            color: blue;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        这是第一层级
+
+        <div class="myq">
+            这是第二层级的，但是使用的是类选择器
+        </div>
+        <div>
+            这是第二层级，是要改变颜色的
+            <p>这是第三层级，但是也会改变颜色的</p>
+        </div>
+    </div>
+<!-- 层级选择器不一定是父子关系，祖孙关系也是可以叠，完成添加样式操作 -->
+</body>
+</html>

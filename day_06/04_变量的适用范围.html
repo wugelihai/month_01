@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 局部变量
+        function fushow(){
+            var iNum1 = 1;
+            alert(iNum1);
+        }
+        // 外部访问不到全局变量，这个和python中效果是一致的
+        fushow();
+        // alert(iNum1);
+
+        // 全局变量
+        var iNum2 = 1;
+        function fuMOdify(){
+            alert(iNum2);
+            // 修改全局变量不用声明global
+            iNum2 = 3;
+            alert(iNum2);
+        }
+
+        fuMOdify();
+        alert('这是全局变量' + iNum2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

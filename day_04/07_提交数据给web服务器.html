@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 把数据提交给web服务器 -->
+    <form action="http://baidu.com" method="POST">
+        <p>
+            <label for="name">姓名：</label>
+            <input type="text" id = 'name' name="username">
+        </p>
+
+        <p>
+            <label>密码：</label>
+            <input type="password" name="password">
+        </p>
+
+        <p>
+            <label>性别：</label>
+            <input type="radio" name="sex" value="0">男
+            <input type="radio" name="sex" value="1">女
+        </p>
+
+        <p>
+            <label>爱好：</label>
+            <input type="checkbox" name="like" value="swiming">游泳
+            <input type="checkbox" name="like" value="sleep">睡觉
+            <input type="checkbox" name="like" value="game">打游戏
+        </p>
+
+        <p>
+            <label>照片：</label>
+            <input type="file" name="person_pic">
+        </p>
+
+        <p>
+            <label>个人描述：</label>
+            <textarea name="about"></textarea>
+        </p>
+
+        <p>
+            <label>籍贯：</label>
+            <select name="site">
+                <option value="0">北京</option>
+                <option value="1">深圳</option>
+            </select>
+        </p>
+
+        <p>
+            <input type="submit" name="" value="提交">
+            <input type="reset" name="" value="重置">
+            <input type="button" name="" value="提示">
+        </p>
+    </form>
+</body>
+</html>

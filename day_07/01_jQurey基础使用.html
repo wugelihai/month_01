@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!-- 使用jquery代码需要重新开一个script标签  -->
+    <script>
+        window.onload = function(){
+            var oDiv = document.getElementById('div1');
+            alert(oDiv)
+        };
+
+        // $符号就是jQuery的象征
+        // $本身就是个函数，只不过这个函数的名字就是($)
+        $(document).ready(function(){
+            // 获取标签和css样式一样
+            // 以后使用jquery标签，变量名都要以$开头
+            var $oDiv1 = $('#div1');
+            alert($oDiv1);
+        });
+
+        // jquery简写方式
+        $(function(){
+            var $oDiv1 = $('#div1');
+            alert($oDiv1);
+        })
+        // ready要比onload要快
+
+        // ready 等待页面标签加载完成之后就会执行ready时间，不会等待页面加载完成
+    </script>
+</head>
+<body>
+    <div id="div1">你不该登录这个网站</div>
+    <img src="https://n.sinaimg.cn/sinacn20113/560/w1080h1080/20190718/0851-hzxsvnp3572972.jpg" alt="短连接图片">
+</body>
+</html>

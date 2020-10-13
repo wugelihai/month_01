@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 隔一段时间去调用一段代码，可以使用到定时器
+        // function hello(name,age){
+        //     alert('hello' +name + age);
+        //     alert(tId)
+        //     // 销毁定时器
+        //     clearTimeout(tId)
+        // }
+        // 第一个参数：函数名，第二个参数时间，第三个参数传入值，每个传入值之间用，隔开
+        // 返回值表示返回的定时器的id，通俗的理解就是创建的第几个定时器
+        // var tId = setTimeout(hello,1000,'lisi',20);
+
+
+        function hello(name,age){
+            alert('hello' +name + age);
+            alert(tId)
+            // 销毁定时器就不能选择在这里面了
+        }
+
+        function fnStop(){
+            clearInterval(sId)
+        }
+        // 根据时间间隔重复去调用
+        var sId = setInterval(hello,3000,'lisi',200);
+
+    </script>
+</head>
+<body>
+    <input type="button" value="停止" onclick="fnStop()">
+</body>
+</html>

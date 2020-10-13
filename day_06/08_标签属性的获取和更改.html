@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .btnstyle{
+            background:yellow;
+        }
+    </style>
+    <script>
+        // 操作标签属性第一步，先拿到这个标签，通过document.getElementById()
+        // 第二步读取标签属性
+        // 设置标签属性
+        window.onload = function(){
+            var sTr = document.getElementById('btn1');
+            // 获取标签属性
+            alert(sTr.type);
+            alert(sTr.value);
+            // 设置样式属性
+            // sTr.style.background = 'red';
+            sTr.className = 'btnstyle'
+        }
+    </script>
+</head>
+<body>
+    
+    <input type="button" value="按钮" id="btn1">
+
+</body>
+</html>
