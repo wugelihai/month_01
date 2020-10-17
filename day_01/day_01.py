@@ -53,7 +53,7 @@
 # for i in range(len(num_list)):
 #     print(num_list[i],end = '\n')
 
-#乘方运算
+# 乘方运算
 # squares = []
 # for i in range(1,6):
 #     squares.append(i**2)
@@ -332,17 +332,32 @@ import time
 #
 # add(16)
 
-a = 1
-b = 1
-c = 0
-while c < 10:
+# a = 1
+# b = 1
+# c = 0
+# while c < 10:
+#
+#     print(a)
+#
+#     a, b = b, a+b
+#     c += 1
 
-    print(a)
 
-    a, b = b, a+b
-    c += 1
+# a = 1
+# b = 2
+# c = 3
+# print(id(1))
+# print(id(a))
+# import keyword
+# print(keyword.kwlist)
 
 
+# a = 1
+# b = 'abc'
+# print('这个数是%06d' % a)
+# print(f'这个数是{a}')
+# print('这个数是'+b)
+# print("Let's go")
 
 
 
