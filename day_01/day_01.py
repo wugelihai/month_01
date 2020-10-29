@@ -227,8 +227,8 @@
 # #
 # # print(get_suffix('readme.txt'))
 
-import os
-import time
+# import os
+# import time
 
 # content = '北 京 欢 迎 你 为 你 开 天 辟 地           '
 # while True:
@@ -359,10 +359,97 @@ import time
 # print('这个数是'+b)
 # print("Let's go")
 
+# 列表推导式
+# list1 = [i for i in range(10) if i%2 == 0]
+# print(list1)
+
+# list2 = [i for i in range(0, 10, 2)]
+# print(list2)
+
+# list3 = [(i, j) for i in range(1, 3) for j in range(3)]
+# print(list3)
+
+# list1 = ['name', 'age', 'gender']
+# list2 = ['tom', 20, 'man']
+# dict1 = {list1[i]: list2[i] for i in range(len(list1))}
+# print(dict1)
 
 
+# counts = {'MBP': 268, 'HP': 125, 'DELL': 201, 'Lenovo': 199, 'acer': 99}
+# count1 = {key:vaule for key,vaule in counts.items() if vaule >=200}
+
+# try:
+#     f = open('test.txt', 'r')
+# except:
+#     f = open('test.txt', 'w')
+
+# 如果尝试执行代码的异常类型和要捕获的异常类型不一致，则无法捕获异常
+# 一般try下面只放一行尝试执行的代码
+# try:
+#     print(1 + 'wo')
+#
+# except NameError:
+#     print('有错误')
+# 当捕获多个异常时候，可以把要捕获的异常的名字放到except后，并使用元组的方式进行书写。
+# try:
+#     print(1 / 0)
+#
+# except (NameError, ZeroDivisionError) as result:
+#     print(result)
+
+# 捕获所有的异常
+# try:
+#     print(1)
+# except Exception as result:
+#     print(result)
+# else:
+#     print('这里是else，没有异常时候会执行这里的代码')
+# finally:
+#     print('不管有没有异常，finally的代码都会执行')
+
+# import time
+# try:
+#     f = open('test.txt')
+#     try:
+#         while True:
+#             content = f.readline()
+#             if len(content) == 0:
+#                 break
+#             time.sleep(5)
+#             print(content)
+#
+#     except:
+#         print('意外终止')
+#     finally:
+#         f.close()
+#         print('关闭文件')
+#
+# except:
+#     print('没有这个文件')
 
 
+# class shortInputError(Exception):
+#     def __init__(self, length, min_len):
+#         self.length = length
+#         self.min_len = min_len
+#
+#     def __str__(self):
+#         return f'你输入的密码长度是{self.length},不能少于{self.min_len}个字符'
+#
+#
+# def main():
+#     try:
+#         con = input('请输入密码')
+#         if len(con) < 3:
+#             raise shortInputError(len(3), 3)
+#
+#     except Exception as result:
+#         print(result)
+#     else:
+#         print('密码输入完成')
+#
+#
+# main()
 
-
-
+import test
+test.testA(12,3)
