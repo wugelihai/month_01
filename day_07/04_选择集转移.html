@@ -9,25 +9,25 @@
     <script>
       $(function(){
         //   获取div，并把div作为参照物，获取其他标签
-        var $box = $("#box1")
+        var $box = $("#box1");
         // css参照是一个js对象，js对象和Python里面的字典很类似
         // 属性名和css里面的属性名保持一致
         // 选择上一个同级标签
-        $box.prev().css({"background":"red","font-size":"50px"})
+        $box.prev().css({"background":"red","font-size":"50px"});
         // 选择上面所有同级标签
-        $box.prevAll().css({"text-indent":"50px"})
+        $box.prevAll().css({"text-indent":"50px"});
         // 选择下一个同级标签
-        $box.next().css({"color":"green"})
+        $box.next().css({"color":"green"});
         // 选择下面所有同级标签
-        $box.nextAll().css({"text-indent":"50px"})
+        $box.nextAll().css({"text-indent":"50px"});
         // 选择同级其他标签
-        $box.siblings().css({"text-decoration":"underline"})
+        $box.siblings().css({"text-decoration":"underline"});
         // 选择父标签
-        $box.parent().css({"background":"gray"})
+        $box.parent().css({"background":"gray"});
         // 选择所有的子标签
-        $box.children().css({"color":"yellow"})
+        $box.children().css({"color":"yellow"});
         // 查找子标签
-        $box.find(".sp1").css({"color":"green"})
+        $box.find(".sp1").css({"color":"green"});
       })
     </script>
 </head>
