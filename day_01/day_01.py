@@ -451,5 +451,4 @@
 #
 # main()
 
-import test
-test.testA(12,3)
+
