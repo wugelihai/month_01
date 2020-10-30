@@ -8,14 +8,18 @@
     <script>
         $(function(){
             // has方法的使用
-            var $div = $('div').has("#mytext");
-            // 设置样式
+            var $div = $('div');
+            // 获取包含指定标签的父标签
+            $('div').has('#mytext');
+            // 可以对选择到的标签去设置样式
             $div.css({'background':'red'});
 
-            // eq方法的使用
+            // eq方法的使用：根据下标选择指定的标签
             var $div = $("div").eq(1);
             // 设置样式
             $div.css({"background":"yellow"});
+
+            // 选择集过滤就是在选中的集合标签里面，根据需要过滤出来想要的标签
         })
         
     </script>

@@ -9,15 +9,22 @@
         $(function(){
             // 获取标签对象
             var $p = $('p');
-            alert($p.length);
+            // alert($p.length);
             // 通过jquery设置样式标签
             $p.css({"color":"red"});
 
-            var $div = $(".div1");
-            alert($div.length);
+            // var $div = $(".div1");
+            // alert($div.length);
 
-            var $div = $("#box1");
-            alert($div.length)
+            // var $div1 = $("#box1");
+            // alert($div1.length)
+
+            // var $div2 = $("div h1");
+            // alert($div2.length);
+
+            var $input = $("input[type=text]")
+            alert($input.length)
+            // 结论：jquery选择器获取标签和css选择器匹配标签方式一样
         });
     </script>
 </head>
@@ -26,5 +33,11 @@
     <p>hello</p> 
     <div class="div1">哈哈</div>
     <div id="box1">你好</div>
+    <div>
+        <h1>哈哈</h1>
+    </div>
+
+    <input type="text">
+    <input type="button">
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            // 获取标签
+            var $p = $("p");
+            var $text = $("#text")
+            // 获取样式属性
+            var $px = $p.css("font-size");
+            alert($px)
+            // 设置样式属性
+            $p.css({"background":"green","font-size":"30px"});
+            // 除了样式属性使用css方法，其他的属性操作都使用prop的操作
+            var $name = $text.prop('name');
+            alert($name)
+
+            var $type = $text.prop('type');
+            alert($type)
+
+            // 设置属性
+            $text.prop({"value":"张三"})
+            // value属性还可以使用val，只有value有，其余的还是要使用prop
+            $text.val('王五')
+
+
+            
+        })
+    </script>
+</head>
+<body>
+    <p>这是一个标签属性</p>
+    <input type="text" name="username" id="text" value="李四">
+</body>
+</html>
