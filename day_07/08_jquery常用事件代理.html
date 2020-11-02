@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 事件会一级一级往上（父控件）传递 -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            var $btn = $("#btn1");
+            var $div = $("div")
+            $btn.click(function () {
+                alert('我是按钮');
+                // 扩展：取消事件冒泡，就是不让时间向父集控件传递
+                // 默认是事件会进行冒泡
+            });
+
+            // $div.click(function(){
+            //     alert("我是div");
+            // })
+
+            // 通过事件代理，让父控件代理子控件的事件，然后执行子控件相关操作
+            var $ul = $("div ul");
+            // 如果是类型不一样的子标签，用，隔开“li，div”
+            $ul.delegate('li', 'click', function () {
+
+                $(this).css({"color": "red"});
+            });
+
+            // 代理多个不同的子标签
+            var $div = $("#box");
+            $div.delegate("#p2,#btn2", "click", function () {
+                alert("ok")
+            })
+        })
+
+
+    </script>
+</head>
+<body>
+<div>
+    <p id="p1">哈哈</p>
+    <input type="button" value="按钮" id="btn1">
+    <ul>
+        <li>哈哈</li>
+        <li>嘻嘻</li>
+        <li>呵呵</li>
+    </ul>
+</div>
+
+<div id="box">
+    <p id="p2">哈哈</p>
+    <input type="button" value="按钮" id="btn2">
+</div>
+</body>
+</html>
