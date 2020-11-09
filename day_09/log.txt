@@ -1,10 +1,5 @@
-2020-11-09 18:07:32,766-loggingÈÕÖ¾.py[lineno:13]-DEBUG-ÕâÊÇÒ»¸ödebug¼¶±ğµÄÈÕÖ¾111
-2020-11-09 18:07:32,766-loggingÈÕÖ¾.py[lineno:14]-INFO-ÕâÊÇÒ»¸öinfo¼¶±ğµÄÈÕÖ¾
-2020-11-09 18:07:32,767-loggingÈÕÖ¾.py[lineno:15]-WARNING-ÕâÊÇÒ»¸öwarning¼¶±ğµÄÈÕÖ¾
-2020-11-09 18:07:32,767-loggingÈÕÖ¾.py[lineno:16]-ERROR-ÕâÊÇÒ»¸öerror¼¶±ğµÄÈÕÖ¾
-2020-11-09 18:07:32,767-loggingÈÕÖ¾.py[lineno:17]-CRITICAL-ÕâÊÇÒ»¸öcritical¼¶±ğµÄÈÕÖ¾
-2020-11-09 18:07:47,641-loggingÈÕÖ¾.py[lineno:13]-DEBUG-ÕâÊÇÒ»¸ödebug¼¶±ğµÄÈÕÖ¾111
-2020-11-09 18:07:47,642-loggingÈÕÖ¾.py[lineno:14]-INFO-ÕâÊÇÒ»¸öinfo¼¶±ğµÄÈÕÖ¾
-2020-11-09 18:07:47,642-loggingÈÕÖ¾.py[lineno:15]-WARNING-ÕâÊÇÒ»¸öwarning¼¶±ğµÄÈÕÖ¾
-2020-11-09 18:07:47,642-loggingÈÕÖ¾.py[lineno:16]-ERROR-ÕâÊÇÒ»¸öerror¼¶±ğµÄÈÕÖ¾
-2020-11-09 18:07:47,642-loggingÈÕÖ¾.py[lineno:17]-CRITICAL-ÕâÊÇÒ»¸öcritical¼¶±ğµÄÈÕÖ¾
+2020-11-09 20:31:17,176-loggingæ—¥å¿—.py[lineno:14]-DEBUG-è¿™æ˜¯ä¸€ä¸ªdebugçº§åˆ«çš„æ—¥å¿—111
+2020-11-09 20:31:17,177-loggingæ—¥å¿—.py[lineno:15]-INFO-è¿™æ˜¯ä¸€ä¸ªinfoçº§åˆ«çš„æ—¥å¿—
+2020-11-09 20:31:17,177-loggingæ—¥å¿—.py[lineno:16]-WARNING-è¿™æ˜¯ä¸€ä¸ªwarningçº§åˆ«çš„æ—¥å¿—
+2020-11-09 20:31:17,177-loggingæ—¥å¿—.py[lineno:17]-ERROR-è¿™æ˜¯ä¸€ä¸ªerrorçº§åˆ«çš„æ—¥å¿—
+2020-11-09 20:31:17,177-loggingæ—¥å¿—.py[lineno:18]-CRITICAL-è¿™æ˜¯ä¸€ä¸ªcriticalçº§åˆ«çš„æ—¥å¿—

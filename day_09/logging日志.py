@@ -10,7 +10,7 @@ import logging
 logging.basicConfig(level=logging.DEBUG,
                     format="%(asctime)s-%(filename)s[lineno:%(lineno)d]-%(levelname)s-%(message)s",
                     filename="log.txt",
-                    filemode="a")
+                    filemode="w")
 logging.debug("这是一个debug级别的日志111")
 logging.info("这是一个info级别的日志")
 logging.warning("这是一个warning级别的日志")

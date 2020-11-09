@@ -3,6 +3,7 @@ import os
 import threading
 import sys
 import framework
+import pymysql
 
 
 # http协议的web服务器类
