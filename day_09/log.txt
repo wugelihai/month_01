@@ -1,0 +1,10 @@
+2020-11-09 18:07:32,766-logging日志.py[lineno:13]-DEBUG-这是一个debug级别的日志111
+2020-11-09 18:07:32,766-logging日志.py[lineno:14]-INFO-这是一个info级别的日志
+2020-11-09 18:07:32,767-logging日志.py[lineno:15]-WARNING-这是一个warning级别的日志
+2020-11-09 18:07:32,767-logging日志.py[lineno:16]-ERROR-这是一个error级别的日志
+2020-11-09 18:07:32,767-logging日志.py[lineno:17]-CRITICAL-这是一个critical级别的日志
+2020-11-09 18:07:47,641-logging日志.py[lineno:13]-DEBUG-这是一个debug级别的日志111
+2020-11-09 18:07:47,642-logging日志.py[lineno:14]-INFO-这是一个info级别的日志
+2020-11-09 18:07:47,642-logging日志.py[lineno:15]-WARNING-这是一个warning级别的日志
+2020-11-09 18:07:47,642-logging日志.py[lineno:16]-ERROR-这是一个error级别的日志
+2020-11-09 18:07:47,642-logging日志.py[lineno:17]-CRITICAL-这是一个critical级别的日志
