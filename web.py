@@ -3,7 +3,13 @@ import os
 import threading
 import sys
 import framework
-import pymysql
+import logging
+
+# 在程序入口模块，设置logging日志的配置信息，只配置一次，整个程序都可以使用，好比单例
+logging.basicConfig(level=logging.DEBUG,
+                    format="%(asctime)s-%(filename)s[lineno:%(lineno)d]-%(levelname)s-%(message)s",
+                    filename="log.txt",
+                    filemode="a")
 
 
 # http协议的web服务器类
@@ -47,6 +53,7 @@ class HttpWebServer(object):
         # 判断是否是动态资源请求，以后把后缀是.html的请求任务是动态资源请求
         if request_path.endswith(".html"):
             """动态资源请求"""
+            logging.info("动态资源请求地址:" + request_path)
             # 动态资源请求找web框架进行处理，需要把请求参数给web框架
             # 准备给web框架的参数信息，都要放到字典里面
             env = {
@@ -78,6 +85,7 @@ class HttpWebServer(object):
 
         else:
             """静态资源请求"""
+            logging.info("静态资源请求地址:" + request_path)
             # 1. os.path.exits
             # os.path.exists("static/" + request_path)
             # 2. try-except
@@ -144,23 +152,24 @@ class HttpWebServer(object):
 
 def main():
     # # 获取终端命令行参数
-    # params = sys.argv
-    # if len(params) != 2:
-    #     print("执行的命令格式如下: python3 xxx.py 9000")
-    #     return
-    #
-    # # 判断第二个参数是否都是由数字组成的字符串
-    # if not params[1].isdigit():
-    #     print("执行的命令格式如下: python3 xxx.py 9000")
-    #     return
-    #
-    # # 代码执行到此，说明命令行参数的个数一定2个并且第二个参数是由数字组成的字符串
-    # port = int(params[1])
+    params = sys.argv
+    if len(params) != 2:
+        print("执行的命令格式如下: python3 xxx.py 9000")
+        logging.warning("在终端启动程序参数的个数不等于2!")
+        return
+
+    # 判断第二个参数是否都是由数字组成的字符串
+    if not params[1].isdigit():
+        print("执行的命令格式如下: python3 xxx.py 9000")
+        logging.warning("在终端启动程序参数的类型不是数字字符串!")
+        return
+
+    # 代码执行到此，说明命令行参数的个数一定2个并且第二个参数是由数字组成的字符串
+    port = int(params[1])
     # 创建web服务器
-    web_server = HttpWebServer(8000)
+    web_server = HttpWebServer(port)
     # 启动服务器
     web_server.start()
-
 
 # 判断是否是主模块的代码
 if __name__ == '__main__':
